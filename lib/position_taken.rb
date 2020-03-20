@@ -1,5 +1,4 @@
-ttt_board = ["",""," "," ","X"," "," "," ",""]
-def position_taken?(board, index)
-  !(board[index] ==  " " || board[index] == "" || board[index] == nil)? 
-  false : true
+def position_taken?(board,index)
+  return false if [" ", "", nil].include?(board[index])
+  return true if ["X", "O"].include?(board[index])
 end
