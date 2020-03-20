@@ -1,4 +1,6 @@
 def position_taken?(board,index)
-  return false if [" ", "", nil].include?(board[index])
-  return true if ["X", "O"].include?(board[index])
+  if (board[index] == "" || board[index] == " " || board[index] == nil)
+  return false 
+  else
+  return true
 end
